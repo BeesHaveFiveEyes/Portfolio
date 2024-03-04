@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxReady</title>    
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="top-section.css">
+    <link rel="stylesheet" href="circle-sections.css">
+    <link rel="stylesheet" href="prices.css">
+    <link rel="stylesheet" href="quote-section.css">
+    <link rel="stylesheet" href="booking-form.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="width-adjustments.css">
+    <script src="reusable-components.js"></script>
+</head>
+<body class="home-page">   
+    <!-- Top section  -->
+    <div class="top-section">
+        <!-- Building and header bar -->
+        <div class="top-section-building">
+            <!-- Header bar -->
+            <oxready-header></oxready-header>
+        </div>
+        <!-- Lawn and text -->
+        <div class="top-section-lawn">
+            <!-- Text -->
+            <div class="top-section-text">
+                <h1 class="hide-below-550">Oxbridge Admissions Preparation,<br/>from Current Oxbridge Students.</h1>
+                <h1 class="hide-above-550">Oxbridge Admissions Preparation, from Current Oxbridge Students.</h1>
+                <!-- Call to action -->
+                <a href="#why-oxready">
+                    <div class="call-to-action">
+                        <p>Find out more</p>
+                        <img src="Graphics/chevron-white.png" alt="Chevron">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- First circle section -->
+    <div class="first-circle-section" id="why-oxready">
+        <!-- Central area -->
+        <div class="central-area">
+            <!-- First panel -->
+            <div class="circle-panel">
+                <!-- Circle Image -->
+                <img src="Graphics/Images/bridge-of-sighs.jpg" alt="Oxford's Bridge of Sighs">
+                <!-- Text -->
+                <div class="content">
+                    <h1>The most up-to-date Oxbridge preparation available.</h1>
+                    <p>Each of our tutors is a student or recent graduate from Oxford or Cambridge, and as such they know exactly the calibre of questions you'll be faced with. They've been through and excelled in the admissions process just a few years ago!</p>
+                    <div class="button-holder">
+                        <a href="tutors.html">Meet our tutors</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second panel -->
+            <div class="circle-panel row-reversed">
+                <!-- Circle Image -->
+                <img src="Graphics/Images/cambridge-punting.jpg" alt="Cambridge's Mathematical Bridge" class="hide-below-550">
+                <!-- Text -->
+                <div class="content">
+                    <h1>All the support you need to ace your application.</h1>
+                    <p>The Oxbridge applications process is more than just an interview. From personal statement reviews to admissions test support –and of course mock interviews– we've got you covered for the entire application process. </p>
+                    <div class="button-holder">
+                        <a href="#booking-form">Book a Free Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Prices -->
+    <div class="prices-section" id="prices-section">
+        <div class="central-area">
+            <div class="central-title">
+                <h1>Our Prices</h1>
+            </div> 
+            <div class="pricing-box hide-above-921 hide-below-550">
+                <div class="content">
+                    <h2>Free Meeting</h2>
+                <p>Our process begins for all customers with a free, online welcome meeting, giving us the opportunity to get to know your needs and giving you the opportunity to ask any questions you have!</p>                    
+                </div>                        
+                <div class="button-holder">
+                    <a href="#booking-form">Book a Meeting</a>
+                </div>
+            </div>
+            <div class="pricing-boxes">
+                <div class="pricing-box hide-below-921 show-below-550">
+                    <div class="content">
+                        <h2>Free Meeting</h2>
+                    <p>Our process begins for all customers with a free, online welcome meeting, giving us the opportunity to get to know your needs and giving you the opportunity to ask any questions you have!</p>                    
+                    </div>                        
+                    <div class="button-holder">
+                        <a href="#booking-form">Book a Meeting</a>
+                    </div>
+                </div>
+                <div class="pricing-box">
+                    <div class="content">
+                        <h2>Mock Interviews</h2>
+                        <ul>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p class="quantity">1</p>
+                                    <p>Interview</p>
+                                </div>
+                                <p class="price">£50</p>                                    
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p class="quantity">2</p>
+                                    <p>Interviews</p>
+                                </div>
+                                <p class="price">£95</p>                                    
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p class="quantity">3</p>
+                                    <p>Interviews</p>
+                                </div>
+                                <p class="price">£140</p>                                    
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p class="quantity">4</p>
+                                    <p>Interviews</p>
+                                </div>
+                                <p class="price">£180</p>                                    
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p class="quantity">5</p>
+                                    <p>Interviews</p>
+                                </div>
+                                <p class="price">£210</p>                                    
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>                        
+                    <div class="button-holder hide-below-550">
+                        <a href="#booking-form">Book a Meeting</a>
+                    </div>
+                </div>
+                <div class="pricing-box">
+                    <div class="content">
+                        <h2>Other Services</h2>
+                        <ul>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <p>Personal Statement Review</p>
+                                </div>
+                                <p class="price">£75</p>                                    
+                            </li>
+                            <hr> 
+                            <li>
+                                <div class="compact-text">                                        
+                                    <div>
+                                        <p>Admissions Test Tuition</p>                                        
+                                    </div>                                        
+                                </div>
+                                <p class="price">£50/h</p>                                    
+                            </li>                                                               
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <div>
+                                        <p>Other Tuition</p>                                        
+                                    </div>                                    
+                                </div>
+                                <p class="price">£45/h</p>                                    
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="compact-text">
+                                    <div>
+                                        <p>General Consultation</p>                                        
+                                    </div>                                    
+                                </div>
+                                <p class="price">£45/h</p>                                    
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>                        
+                    <div class="button-holder">
+                        <a href="#booking-form">Book a Meeting</a>
+                    </div>
+                </div>                
+            </div>           
+        </div>
+    </div>
+    <!-- Second circle section -->
+    <div class="second-circle-section" id="second-circle-section">
+        <!-- Central area -->
+        <div class="central-area">
+            <!-- First panel -->
+            <div class="circle-panel">
+                <!-- Circle Image -->
+                <img src="Graphics/Images/student-at-whiteboard.jpg" alt="Oxford's Bridge of Sighs">
+                <!-- Text -->
+                <div class="content">
+                    <h1>Improve fast with comprehensive written feedback</h1>
+                    <p>Strong interview technique and communication skills are critical to securing an Oxbridge offer. That's why you'll receive a detailed feedback report after completing any of our interviews. We'll cover where you excelled and what you can work on to maximise your chances of success.</p>
+                    <div class="button-holder">
+                        <a href="#booking-form">BOOK AN INTERVIEW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote section -->
+    <div class="quote-section">
+        <div class="central-area">
+            <div class="content">
+                <h1>“My tutor Eleanor was absolutely amazing. My mock interview was so similar to the interview I was given for the real thing!”</h1>
+                <p>BIOLOGY APPLICANT</p>
+            </div>
+        </div>
+    </div>
+    <!-- Booking form -->
+    <div class="booking-form" id="booking-form">
+        <div class="central-area">
+            <div class="content">
+                <h1>Book your free introductory meeting today.</h1>
+                <p>Interested? If you're keen to find out more, we offer a free online meeting with a member of our team. We'll be able to answer all the questions you have, and discuss exactly how we can support you in your application. Simply fill out the attached form to get started!</p>
+                <p>Prefer to skip the introductions? That's fine too– just drop us an email on the address below and one of our team will be in touch.</p>
+                <a href="mailto:inquiries@oxready.co.uk" class="email">inquiries@oxready.co.uk</a>
+            </div>
+            <div class="form">
+                <form action="https://getform.io/f/59f01f70-a86b-453b-a109-0a3e5d939b87" method="POST">
+                    <div>
+                      <label for="name">CONTACT NAME*</label>
+                      <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="subject">SUBJECT* (e.g. Mathematics)</label>
+                        <input type="text" name="subject" id="subject" required>
+                      </div>
+                    <div>
+                      <label for="email">EMAIL ADDRESS*</label>
+                      <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER (Optional)</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="description">MESSAGE* (Please indicate your availability for a free meeting)</label>
+                        <textarea rows="5" cols="50" name="description" id="description"></textarea>
+                    </div>                        
+                    <div>
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <oxready-footer></oxready-footer>
+</body>
+</html>

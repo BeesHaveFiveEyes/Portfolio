@@ -1,0 +1,131 @@
+.tutors .circle-panel .content {
+  padding-left: 3em;;
+}
+
+.tutors .circle-panel {
+  justify-content: left;
+}
+
+.tutors .circle-panel .content h1 {
+  margin-bottom: 0.3em;
+  padding-bottom: 0em;
+}
+
+.tutors .circle-panel h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.07em;
+  color: var(--dark-accent);
+  font-size: large;
+  padding: 0em;
+}
+
+.tutors .circle-panel {
+  padding-bottom: 4em;
+}
+
+.tutors .circle-panel img {
+  width: 12em;
+  height: 12em;
+  padding: none;
+}
+
+@media only screen and (max-width: 921px) {
+
+  .tutors .circle-panel {
+    padding-bottom: 1em;
+  }
+
+  .tutors .circle-panel h1 {
+    text-align: center;
+  }
+
+  .tutors .circle-panel h2 {
+    text-align: center;
+  }
+
+  .tutors .circle-panel {
+      flex-direction: column;
+  }
+  
+  .tutors .circle-panel img {
+      border-radius: 25vw;
+      margin: 0em;
+      width: 50vw;
+      height: 50vw;
+      padding: 0em;
+  }
+
+  .tutors .circle-panel.row-reversed img {
+      margin: 0em;
+  }
+
+  .tutors .circle-panel .content {        
+      padding: 1em 0em;
+  }
+
+  .tutors .circle-panel.row-reversed .content {        
+      padding: 1em 0em;
+  }
+
+  .tutors .circle-panel h1 {
+      font-size: x-large;
+  }
+
+  .row-reversed {
+      padding: 0em;
+  }
+
+  .tutors .first-circle-section .central-area {
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+
+  .tutors .second-circle-section .circle-panel {        
+      flex-direction: column;        
+  }
+
+  .tutors .second-circle-section .central-area {
+      padding-top: 0em;
+      padding-bottom: 0.5em;
+  }
+
+  .tutors .second-circle-section img {
+      padding-bottom: 0em;
+      padding-top: 0em;
+  }
+
+  .tutors .circle-panel .button-holder {    
+      display: flex;
+      text-align: center;
+  }
+
+  .tutors .circle-panel .button-holder a{    
+      width: 100%;
+  }
+}
+
+.tutors .ending-text {
+  padding: 3em 0em 1em;
+}
+
+.tutors .button-holder {
+  padding: 0.3em 0.7em;
+  background-color: var(--dark-accent);
+  display: flex;
+  justify-content: center;
+  margin-top: 0em;
+  margin-bottom: 2em;
+}
+
+.tutors .button-holder a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;    
+  letter-spacing: 0.07em;
+}
+
+.tutors .ending-section {
+  padding-bottom: 0.5em;
+}

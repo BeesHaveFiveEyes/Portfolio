@@ -1,0 +1,133 @@
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: dark;
+    text-align: center;
+}
+
+.top-section-building {
+    background-image: url("Graphics/Images/quad-and-cloisters-widened-top-compressed.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 27.49vw;
+}
+
+.top-section-lawn {
+    background-image: url("Graphics/Images/quad-and-cloisters-widened-bottom-compressed.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 16.23vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateY(-2px);
+}
+
+.top-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em;
+}
+
+.top-section-text h1 {
+    font-size: 3vw;
+    font-weight: 800;
+    margin: 0em;
+}
+
+.top-section .call-to-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    opacity: 0.5;
+}
+
+.top-section .call-to-action p {
+    color: white;
+}
+
+.top-section-text .call-to-action img {
+    height: 0.9em;
+    object-fit: contain;
+    padding-left: 0.5em;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .top-section-text h1 {
+        font-size: xx-large;
+    }
+
+    .top-section .call-to-action p {
+        margin: 0.5em;
+        font-size: large;
+    }
+
+    .top-section .call-to-action img {
+        height: 0.5em;
+        padding-left: 0em;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .top-section-text h1 {
+        font-size: xx-large;
+    }
+
+    .top-section .call-to-action p {
+        margin: 0.5em;
+        font-size: large;
+    }
+
+    .top-section .call-to-action img {
+        height: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .top-section-building {
+        height: 296.91px;
+    }
+
+    .top-section-lawn {
+        height: 175.28px
+    }    
+
+
+    .top-section-text h1 {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    
+    .top-section-text h1 {
+        font-size: x-large;
+    }
+
+    .top-section .call-to-action p {
+        margin: 0.5em;
+        font-size: large;
+    }
+
+    .top-section .call-to-action img {
+        height: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .menu-bar {
+        justify-content: center;
+    }
+}

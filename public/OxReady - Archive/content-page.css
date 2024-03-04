@@ -1,0 +1,77 @@
+.content-page.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("Graphics/Images/quad-and-cloisters-background-compressed.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .content-page {
+    display: flex;
+    flex-direction: column;
+} */
+
+.content-page .central-area {
+  background-color: var(--light2);
+  padding: 1em 3em 0em;
+  margin-top: 4em;
+  /* margin-bottom: auto; */
+}
+
+.content-page footer {
+    margin-top: 1.5em;
+}
+
+.content-page .title-content {
+  padding-bottom: 4em;
+}
+
+.content-page .title-content h1 {
+  color: var(--dark-accent);
+  font-weight: 600;
+}
+
+.content-page .title-content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-accent);
+}
+
+@media only screen and (max-width: 921px) {
+    .content-page .central-area {
+        padding: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .content-page.background-image {
+        background-image: none;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content-page .central-area {
+        background-color: var(--light2);
+        padding: 0em;
+        margin-top: 0em;
+        background-color: white;
+    }
+
+    .content-page .title-content {
+        padding-bottom: 2em;
+    }
+
+    .content-page .title-content h1 {
+        font-size: x-large;
+        padding: 1em 0em 0.5em;
+        /* text-align: center; */
+    }
+
+    .content-page .menu-bar {
+        background-color: var(--dark-accent);
+    }
+}

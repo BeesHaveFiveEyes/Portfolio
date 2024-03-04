@@ -1,0 +1,117 @@
+
+form {
+    padding: 1em;
+    padding-top: 1.5em;
+    background-color: var(--light2);
+}
+
+input {
+    padding: 0.5em;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    border: none;
+    background-color: var(--light1);
+    margin-bottom: 1.2em;
+    margin-top: 0.3em;
+    border-radius: 0em;
+    -webkit-border-radius: 0em;
+}
+
+input[type=submit] {    
+    width: 100%;
+    background-color: var(--dark-accent);;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0em;
+    -webkit-appearance: none;
+    border-radius: 0em;
+    -webkit-border-radius: 0em;
+}
+
+label {
+    color: #696969;
+    font-weight: 600;
+    font-size: small;
+    letter-spacing: 0.05em;
+}
+
+textarea {
+    background-color: #E3E3E3;
+    padding: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    border: none;
+    /* width: calc(100% - 1em); */
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 1.2em;
+    margin-top: 0.3em;
+    border-radius: 0em;
+    -webkit-border-radius: 0em;
+}
+
+.booking-form .central-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.booking-form .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.booking-form .form {
+    width: 50%;
+    padding-left: 5em;
+}
+
+.booking-form h1 {
+    color: var(--dark-accent);;
+    margin-top: 0em;
+}
+
+.booking-form a {
+    font-weight: bold;
+    color: black;
+    margin: 0em;
+}
+
+.booking-form .email {
+    margin: 0em;
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 921px) {
+
+    .booking-form .central-area {
+        flex-direction: column;
+    }
+
+    .booking-form .form {
+        width: 100%;
+        padding: 0em;
+    }
+
+    .booking-form .content {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+
+    .booking-form .phone {
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .booking-form h1 {
+        font-size: x-large;
+    }
+}

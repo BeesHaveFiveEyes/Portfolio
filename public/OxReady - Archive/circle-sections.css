@@ -1,0 +1,143 @@
+/* CIRCLE SECTION */
+
+.first-circle-section {
+    background-color: var(--light2);
+}
+
+.circle-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-panel img {    
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.circle-panel .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
+}
+
+.circle-panel.row-reversed .content {
+    padding-left: 0em;
+    padding-right: 4em;
+}
+
+.circle-panel .content h1 {
+    margin-right: 0%;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+.circle-panel .button-holder {    
+    display: flex;
+    justify-content: left;
+}
+
+.circle-panel .content a {    
+    padding: 0.4em 0.7em;
+    background-color: var(--dark-accent);;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    letter-spacing: 0.07em;
+    color: white;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.row-reversed {
+    flex-direction: row-reverse;
+    padding-top: 3em;
+}
+
+@media only screen and (max-width: 921px) {
+
+    .home-page .circle-panel img {
+        margin-left: max(-10em, calc(0em - calc(921px - 100vw)));
+    }
+
+    .home-page .circle-panel.row-reversed img {
+        margin-right: max(-10em, calc(0em - calc(921px - 100vw)));
+        margin-left: 0em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .home-page .first-circle-section {
+        background-color: white;
+    }
+
+    .home-page .circle-panel {
+        flex-direction: column-reverse;
+    }
+    
+    .home-page .circle-panel img {
+        border-radius: 0em;
+        margin: 0em;
+        width: 100vw;
+        height: 70vw;
+        padding: 1em 0 0.5em;
+    }
+
+    .home-page .circle-panel.row-reversed img {
+        margin: 0em;
+    }
+
+    .home-page .circle-panel .content {        
+        padding: 1em 0em;
+    }
+
+    .home-page .circle-panel.row-reversed .content {        
+        padding: 1em 0em;
+    }
+
+    .home-page .circle-panel h1 {
+        font-size: x-large;
+    }
+
+    .home-page .row-reversed {
+        padding: 0em;
+    }
+
+    .home-page .first-circle-section .central-area {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .home-page .second-circle-section .circle-panel {        
+        flex-direction: column;        
+    }
+
+    .home-page .second-circle-section .central-area {
+        padding-top: 0em;
+        padding-bottom: 0.5em;
+    }
+
+    .home-page .second-circle-section img {
+        padding-bottom: 0em;
+        padding-top: 0em;
+    }
+
+    .home-page .circle-panel .button-holder {    
+        display: flex;
+        text-align: center;
+    }
+
+    .home-page .circle-panel .button-holder a{    
+        width: 100%;
+    }
+}
