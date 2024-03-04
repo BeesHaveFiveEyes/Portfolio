@@ -11,7 +11,7 @@ $(".navigation-menu").html(
             <a href="index.html?scroll-to=iOS_Apps">Apps</a>
             <a href="web-design.html">Web Design</a>
             <!-- <a href="index.html?scroll-to=Other_Projects">Other</a> -->
-            <a href="">Contact</a>   
+            <a href="mailto:hello@alasdaircasperd.com?subject=Contact">Contact</a>   
         </div>                          
     </div>`
 )

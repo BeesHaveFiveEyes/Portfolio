@@ -33,7 +33,8 @@ $(".footer").html(
     </div>
     <div class="link-group">
         <p>Contact & Links</p>
-        <p>Email</p>
+        <p><a href="mailto:hello@alasdaircasperd.com?subject=Contact">Email</a></p>
+        <p><a href="https://github.com/BeesHaveFiveEyes">GitHub</a></p>
         <p><a href="https://apps.apple.com/us/developer/alasdair-casperd/id1652112648">App Store</a></p>
         <!-- <p>GitHub</p> -->
     </div>
@@ -41,6 +42,6 @@ $(".footer").html(
 <div class="small-print">
     <a href="index.html" class="icon"><span class="material-symbols-outlined">home</span></a>                
     <p>© Alasdair Casperd 2024</p>
-    <a href="index.html" class="icon"><span class="material-symbols-outlined">email</span></a>
+    <a href="mailto:hello@alasdaircasperd.com?subject=Contact" class="icon"><span class="material-symbols-outlined">email</span></a>
 </div>`
 )
