@@ -64,18 +64,20 @@ function highlightCurrentSection() {
     });
 
     $(".sidebar-contents").children(".sidebar-link").each(function() {
-        if ($(this).attr('id') == currentSection.attr('id')) {
-            $(this).addClass('active');
-            $(this).css("font-weight", 600);
-        }
-        else {
-            $(this).removeClass('active');
-            $(this).css("font-weight", 200);
+        if (currentSection != null) {
+            if ($(this).attr('id') == currentSection.attr('id')) {
+                $(this).addClass('active');
+                $(this).css("font-weight", 600);
+            }
+            else {
+                $(this).removeClass('active');
+                $(this).css("font-weight", 200);
+            }
         }
     })
 }
 
-// Offset siderbar position to account for footer
+// Offset sidebar position to account for footer
 
 function manageSidebarFooterOffset() {
 

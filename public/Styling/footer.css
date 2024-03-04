@@ -70,19 +70,21 @@
 }
 
 @media only screen and (max-width: 1108px) {
-    .footer .link-group:nth-child(4) {
-        display: none;
+    .footer .links-container {
+        display: grid;   
+        gap: var(--content-area-inset);
+        grid-template-columns: repeat(4, 1fr);;
     }
 }
 
 @media only screen and (max-width: 830px) {
-    .footer .link-group:nth-child(1) {
-        display: none;
+    .footer .links-container {        
+        grid-template-columns: repeat(3, 1fr);;
     }
 }
 
 @media only screen and (max-width: 580px) {
-    .footer .link-group:nth-child(5) {
-        display: none;
+    .footer .links-container {        
+        grid-template-columns: repeat(2, 1fr);;
     }
 }
