@@ -28,6 +28,7 @@
     --framed-content-width: 40em;
     --content-area-inset: 2em;
     --secondary-inset: 3em;
+    --max-page-width: 1400px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -155,6 +156,11 @@ a {
 
 .inset-scroller::-webkit-scrollbar { /* WebKit only */
     display: none;
+}
+
+.inset-scroller.faded {
+    overflow-x: inherit;
+    mask-image: linear-gradient(90deg, transparent, black var(--content-area-inset), black calc(100% - var(--content-area-inset)), transparent);;
 }
 
 /* Custom Icons */

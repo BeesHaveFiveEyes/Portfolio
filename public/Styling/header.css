@@ -104,6 +104,12 @@
     opacity: 1;
 }
 
+@media only screen and (min-width: 1550px) {
+    .full-width-navigation-menu .text {
+        max-width: calc(var(--max-page-width) - 2*var(--content-area-inset));
+    }    
+}
+
 @media only screen and (max-width: 1024px) {
     
     .navigation-menu .text {

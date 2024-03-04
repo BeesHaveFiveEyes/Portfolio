@@ -25,13 +25,35 @@
 
 /* Background */
 
-.gradient-backdrop {
+.home-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background: linear-gradient(180deg, rgb(255,255,255), rgb(255,253,250), rgb(219,239,255), rgb(255,245,252));
+    max-width: 100%;
+    /* background: linear-gradient(45deg, #B620E043, #32C5FF43, #B620E043, #B620E043); */
+}
+
+.gradient-background {
+    background: linear-gradient(180deg, rgb(255,255,255), rgb(255,253,250), rgb(219,239,255), rgb(255,245,252));    
+    max-width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
-    .gradient-backdrop {
+    .gradient-background {
         background: linear-gradient(180deg, rgb(22, 22, 22), rgb(35,38,48), rgb(30,34,38), rgb(46,26,40));
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+
+    .gradient-background {
+        max-width: var(--max-page-width);
+    }
+
+    .inset-scroller {
+        overflow-x: inherit;
+        mask-image: linear-gradient(90deg, transparent, black var(--content-area-inset), black calc(100% - var(--content-area-inset)), transparent);;
     }
 }
 
