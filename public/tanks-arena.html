@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="Styling/header.css">  
     <link rel="stylesheet" href="Styling/sidebar.css">
     <link rel="stylesheet" href="Styling/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">  
+    <link rel="stylesheet" href="Scripts/Prism/prism.css">
   </head>
   <body>    
 	<div class="navigation-menu"></div>        
@@ -109,6 +110,46 @@
                     <p>There are lots of features and improvements that I would love to add to the game in the future. Some of the most obvious improvements would be adding more power-ups, adding support for more players in multiplayer and introducing additional game-modes in single player. There are also some obvious omissions from the game, such as the lack of a proper controller management screen, that I'm keen to rectify.</p>                           
                     <p>Another feature that I'd love to bring to the game is an electricity system to allow players to trigger spike-traps, mines and other hazards with buttons in the arena. I feel this would be a great addition to the gameplay and add a new dimension of creative possibilities to the arena editor. I look forward to coming back and adding this one day!</p>
                 </div>  
+                <div class="unmarked-section" id="Code">
+                    <h3>Code Available on GitHub</h3>
+                    <p>I've made the game's code public on my <a href="https://github.com/BeesHaveFiveEyes/Tanks-Arena">GitHub</a>. Some of the scripts date back to my first experiments with Unity five years ago, so please don't judge it too harshly :)</p>                           
+                    <pre><code class="language-csharp">
+// Instantiate a new Arena object from an input Level object
+public static void CreateArena(Level level)
+{
+    Debug.Log("Creating Arena from level '" + level.levelName + "'");
+
+    // Destroy the current arena (if one exists)
+    Destroy(currentArena);
+    
+    // Create a 'root' gameObject with the Arena component
+    GameObject arenaHook = new GameObject(level.levelName);
+    Arena arena = arenaHook.AddComponent&lt;Arena>();
+
+    // Create each of the blocks making up the arena's block matrix
+    List&lt;List&lt;Block>> blockMatrix = new List&lt;List&lt;Block>>();
+    for (int i = 0; i &lt; level.Height; i++)
+    {
+        List&lt;Block> row = new List&lt;Block>();
+        for (int j = 0; j &lt; level.Width; j++)
+        {
+            // Name the block
+            string blockName = "B(" + i.ToString() + "," + j.ToString() + ")";
+
+            // Configure the block's properties
+            block.tile = level.tileMatrix[i][j];
+            block.level = level;
+            block.arena = arena;
+            block.x = i;
+            block.y = j;
+
+            // ...
+        }
+    }
+    // ...     
+}
+                    </code></pre>
+                </div>  
             </div>                 
         </div>                
     </div>  
@@ -117,5 +158,6 @@
     <script src="Scripts/sidebar.js"></script>     
     <script src="Scripts/header.js"></script>   
     <script src="Scripts/footer.js"></script>           
+    <script src="Scripts/Prism/prism.js"></script>           
   </body>
 </html>
