@@ -16,7 +16,8 @@
     --footer-background: rgb(28, 30, 37);
     --footer-text: #5C6675;
     --link-color: rgb(84, 68, 128);
-
+    --code-background: #2a2c33;
+    --code-text: #c2cbdb;
     --background-light: #EFF1F9;
     --background-medium: #D8DCEE;
     --background-medium-dark: rgb(49, 52, 64);
@@ -49,6 +50,7 @@
         --link-color: rgb(118, 94, 234);
         --background-light: #19191d;
         --background-medium: #212225;
+        --code-background: #1b1c1f;
     }
 }
 
