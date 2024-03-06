@@ -112,16 +112,10 @@
                 </div>  
                 <div class="unmarked-section" id="Code">
                     <h3>Code Available on GitHub</h3>
-                    <p>I've made the game's code public on my <a href="https://github.com/BeesHaveFiveEyes/Tanks-Arena">GitHub</a>. Some of the scripts date back to my first experiments with Unity five years ago, so please don't judge it too harshly :)</p>                           
-                    <pre><code class="language-csharp">
-// Instantiate a new Arena object from an input Level object
+                    <p>I've made the game's code public on my <a href="https://github.com/BeesHaveFiveEyes/Tanks-Arena">GitHub</a>. Some of the scripts date back to my first experiments with Unity five years ago, so please don't judge them too harshly :)</p>                           
+                    <a class="plain-link" href="https://github.com/BeesHaveFiveEyes/Tanks-Arena"><pre><code class="language-csharp">// Instantiate a new Arena object from an input Level object
 public static void CreateArena(Level level)
-{
-    Debug.Log("Creating Arena from level '" + level.levelName + "'");
-
-    // Destroy the current arena (if one exists)
-    Destroy(currentArena);
-    
+{   
     // Create a 'root' gameObject with the Arena component
     GameObject arenaHook = new GameObject(level.levelName);
     Arena arena = arenaHook.AddComponent&lt;Arena>();
@@ -135,20 +129,8 @@ public static void CreateArena(Level level)
         {
             // Name the block
             string blockName = "B(" + i.ToString() + "," + j.ToString() + ")";
-
-            // Configure the block's properties
-            block.tile = level.tileMatrix[i][j];
-            block.level = level;
-            block.arena = arena;
-            block.x = i;
-            block.y = j;
-
-            // ...
-        }
-    }
-    // ...     
-}
-                    </code></pre>
+            
+            // ...</code></pre></a>
                 </div>  
             </div>                 
         </div>                

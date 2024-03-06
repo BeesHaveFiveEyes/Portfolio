@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backtrack</title>
+    <link rel="stylesheet" href="Styling/adc-core.css">  
+    <link rel="stylesheet" href="Styling/main.css">     
+    <link rel="stylesheet" href="Styling/header.css">  
+    <link rel="stylesheet" href="Styling/sidebar.css">
+    <link rel="stylesheet" href="Styling/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+    <link rel="stylesheet" href="Scripts/Prism/prism.css">
+  </head>
+  <body>    
+	<div class="navigation-menu"></div>        
+    <div class="page">
+        <div class="centered-content">
+            <div class="sidebar">
+                <div class="sidebar-contents">
+                    <!-- Entries created in main.js -->
+                </div>                   
+            </div>
+            <div class="framed-content">
+                <div class="section" id="Introduction">
+                    <div class="app-icon-pair">
+                        <img src="Images/Backtrack/Backtrack App Icon.png" alt="Backtrack App Icon" class="app-icon">
+                        <div class="text-pair">
+                            <h1>Backtrack</h1>
+                            <p>Lightweight Hiking Companion</p>                
+                        </div>                
+                    </div>
+                    <p>Backtrack is a work-in-progress iOS hiking app designed to help multi-day backpackers organise their hiking kit and minimize their pack weight on long hikes.</p>
+                </div>
+                <div class="section" id="About">
+                    <h3>The Ultimate Backpacking Companion</h3>
+                    <p>Backtrack allows users to track the kit they are carrying on long-distance hiking trips and gain invaluable insights into their pack weight distribution. Key features include a kit library shared across trips, dynamic weight charts and iCloud sync.</p>                 
+                    <div class="phone-scroller inset-scroller">                        
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Trip View.png" alt="">
+                                <p>Trip View</p>
+                            </div>                        
+                        </div>   
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Kit View.png" alt="">
+                                <p>Kit Library</p>
+                            </div>                        
+                        </div>                           
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Weight Distribution View.png" alt="">
+                                <p>Weight Charts</p>
+                            </div>                        
+                        </div>   
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Trips View.png" alt="">
+                                <p>Trips View</p>
+                            </div>                        
+                        </div>                          
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Welcome View.png" alt="">
+                                <p>Welcome View</p>
+                            </div>                        
+                        </div>   
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Item View.png" alt="">
+                                <p>Item Details</p>
+                            </div>                        
+                        </div>      
+                        <div class="phone-pair-wrapper">
+                            <div class="phone-pair">
+                                <img src="Images/Backtrack/Phones/Items View.png" alt="">
+                                <p>Pack Contents</p>
+                            </div>                        
+                        </div>                                                                                                                                                                                                                                                                     
+                    </div>                    
+                </div>    
+                <div class="section" id="Development">
+                    <h3>Code Available on GitHub</h3>
+                    <p>Backtrack is built in Swift and SwiftUI, using the new SwiftData framework. I've made the app's work-in-progress code public on my <a href="https://github.com/BeesHaveFiveEyes/Backtrack">GitHub</a>.</p>
+                    <a class="plain-link" href="https://github.com/BeesHaveFiveEyes/Backtrack"><pre><code class="language-swift">import SwiftUI
+
+// View showing information about a Trip object
+struct TripDetailsView: View {
+        
+    // The Trip being inspected
+    @Bindable var trip: Trip
+    
+    // Has this trip been newly created?
+    var newTrip = false
+
+    // Closure to perform on saving the trip
+    var onSubmit: (Trip) -> () = {_ in}
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        NavigationStack {
+            Form {
+                HStack {
+                    Text("Name")
+                    Spacer()
+                    TextField("none", text: $trip.name)
+                        .multilineTextAlignment(.trailing)
+                }
+                .icon(systemName: "pencil.line")
+                // ...</code></pre></a>
+                <div class="functionality-tags">
+                    <p>Swift</p>
+                    <p>SwiftUI</p>
+                    <p>SwiftData</p>
+                    <p>MapKit</p>
+                    <p>TipKit Integration</p>
+                    <p>SF Symbols</p>
+                    <p>Dark Mode</p> 
+                    <p>iCloud Sync</p> 
+                </div>
+                </div> 
+            </div>
+        </div>
+    </div>  
+    <div class="footer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Scripts/sidebar.js"></script>     
+    <script src="Scripts/header.js"></script>   
+    <script src="Scripts/footer.js"></script>            
+    <script src="Scripts/Prism/prism.js"></script>           
+  </body>
+</html>

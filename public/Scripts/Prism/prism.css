@@ -25,7 +25,7 @@ pre[class*=language-] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    border-radius: .3em
+    border-radius: 1em
 }
 
 :not(pre)>code[class*=language-],
@@ -35,7 +35,7 @@ pre[class*=language-] {
 
 :not(pre)>code[class*=language-] {
     padding: .1em;
-    border-radius: .3em;
+    border-radius: 2em;
     white-space: normal
 }
 
@@ -89,7 +89,7 @@ pre[class*=language-] {
 .token.attr-value,
 .token.class-name,
 .token.function {
-    color: #f21554
+    color: #f2158f
 }
 
 .token.keyword {

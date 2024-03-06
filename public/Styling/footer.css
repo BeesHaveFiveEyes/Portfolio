@@ -72,7 +72,8 @@
 @media only screen and (max-width: 1108px) {
     .footer .links-container {
         display: grid;   
-        gap: var(--content-area-inset);
+        row-gap: 4em;
+        column-gap: var(--content-area-inset);
         grid-template-columns: repeat(4, 1fr);;
     }
 }

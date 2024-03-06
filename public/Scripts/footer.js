@@ -12,9 +12,9 @@ $(".footer").html(
             <p><a href="index.html?scroll-to=iOS_Apps">iOS Apps</a></p>
             <p><a href="wordowl.html">WordOwl App</a></p>
             <p><a href="domingo.html">Domingo App</a></p>
-            <p>Trace App</p>
-            <p>Lightbox App</p>
-            <p>Backtrack App</p>
+            <p><a href="trace.html">Trace App</a></p>
+            <!-- <p>Lightbox App</p> -->
+            <p><a href="backtrack.html">Backtrack App</a></p>
             <p><a href="lessons.html">Lessons App</a></p>
         </div>
         <div class="link-group">

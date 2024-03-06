@@ -125,6 +125,11 @@ a {
     font-weight: 600;
 }
 
+a.plain-link {
+    color: inherit;
+    font-weight: inherit;
+}
+
 /* Content Area */
 
 .content-area {
