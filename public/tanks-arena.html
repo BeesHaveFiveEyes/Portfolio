@@ -27,7 +27,7 @@
                     <div class="app-icon-pair">                        
                         <h1>Tanks Arena</h1>
                     </div>
-                    <p>Tanks Arena is a video game prototype produced in the Unity game engine. Drawing inspiration from top-down multiplayer games such as <i>Boomerang Fu</i>, players control heavily stylised tanks which fire absurdly bouncy projectiles that ricochet several times off the arena walls. Many of the idea were inspired by old tank-operating games such as <i>Tank Trouble</i> and the '<i>Tanks</i>' game from Wii Play.</p>                    
+                    <p>Tanks Arena is a video game prototype produced in the Unity game engine. The game draws inspiration from top-down multiplayer games such as <i>Boomerang Fu</i>, and sees players control heavily stylised tanks which fire absurdly bouncy projectiles that ricochet several times off the arena walls. Many of the ideas were inspired by old tank-operating games such as <i>Tank Trouble</i> and the '<i>Tanks</i>' game from Wii Play.</p>                    
                     <div class="video-link">
                         <a href="https://www.youtube.com/watch?v=BSPG38ITjuY">
                             <img class = "main-image" src="Images/Tanks Arena/Tanks Trailer Thumbnail Image.png" alt="">                                       
@@ -46,7 +46,7 @@
                     <h3>UI and Menu Design</h3>                    
                     <p>Possibly my favourite part of the whole project was designing game's various menus, including the main menu, the pause menu and the arena editor interface. I found designing these menus surprisingly challenging, and spent a lot of time studying the UI design in games such as <i>Sifu</i>, <i>Hitman 3</i> and <i>Boomerang Fu</i> before settling on the final style.</p>
                     <img class = "main-image" src="Images/Tanks Arena/Multiplayer Screen GIF.gif" alt="Multiplayer Menu Screen">                                       
-                    <p>As the majority of Unity's built-in UI components weren't suitable for the designs I had in mind, I ended up creating a wealth of custom UI components including, custom pickers, alerts, dialogue boxes and more for the game.</p> 
+                    <p>As the majority of Unity's built-in UI components weren't suitable for the designs I had in mind, I ended up creating a wealth of custom UI components including custom pickers, alerts, dialogue boxes and more for the game.</p> 
                     <div class="primary-captionned-image">
                         <div>
                             <img src="Images/Tanks Arena/Arena Editor Library.png" alt="Arena Library Screen">
@@ -81,7 +81,7 @@
                     <h3>Arena Editor</h3>
                     <p>The feature that I was most excited to implement in the game was an Arena Editor that would allow the player to create their own arenas to use in the game. I have always been a huge fan of games which offer level editors, especially when these are powerful enough to replicate any of the original levels playable in the game. With this in mind, the Arena Editor took shape fairly early on in the process, and so I was able to use it to create each of the official levels and arenas featured in the final game.</p>                           
                     <img src="Images/Tanks Arena/Arena Editor GIF.gif" class="main-image" alt="Arena Editor">
-                    <p>The levels in the game and hence the Arena Editor work on a strict grid based system of 29x29 tiles. It was also important to me that the editor felt satisfying to use, and I spent a lot of time experimenting with different animations sound effects to find just the right balance between looking smooth and feeling snappy.</p>
+                    <p>It was also important to me that the editor felt satisfying to use, and I spent a lot of time experimenting with different animations sound effects to find just the right balance between it looking smooth and feeling snappy.</p>
                 </div>  
                 <div class="section" id="Gameplay">
                     <h3>Programming the Gameplay</h3>
@@ -90,7 +90,7 @@
                 </div>  
                 <div class="section" id="Single_Player">
                     <h3>Single Player</h3>
-                    <p>The single player game-mode sees players battling waves of AI tanks through nine challenging levels. This involved creating AI adversaries of various difficulties for the player to encounter in these levels. This is handed by an AITank component which interfaces with the same Tank component controlled by the player through PlayerTank component, which ensures that the AO tanks move and handle in exactly the same way as the player. Whilst I'm fairly happy with the resulting AI opponents, I'd love to go back and improve on this aspect of the game one day – their simple behaviour could be hugely improved with proper path finding and the ability to intentionally bounce bullets off walls.</p>                           
+                    <p>The single player game-mode sees players battling waves of AI tanks through nine challenging levels. This involved creating AI adversaries of various difficulties for the player to encounter in these levels. This is handed by an AITank component which interfaces with the same Tank component controlled by the player through the PlayerTank component, which ensures that the AI tanks move and handle in exactly the same way as the player. Whilst I'm fairly happy with the resulting AI opponents, I'd love to go back and improve on this aspect of the game one day – their simple behaviour could be hugely improved with proper path finding and the ability to intentionally bounce bullets off walls.</p>                           
                     <img src="Images/Tanks Arena/Singple Player Frame.png" alt="Single Player Gameplay" class="main-image">
                 </div>  
                 <div class="section" id="Multiplayer">
@@ -104,11 +104,6 @@
                     </ul>
                     <img src="Images/Tanks Arena/Multiplayer Frame 2.png" alt="Multiplayer Gameplay" class="main-image">
                     <!-- <p>You can see each of these power-ups in action in the <a href="https://www.youtube.com/watch?v=BSPG38ITjuY">trailer</a> above!</p> -->
-                </div>  
-                <div class="unmarked-section" id="Future Plans">
-                    <h3>Future Plans</h3>
-                    <p>There are lots of features and improvements that I would love to add to the game in the future. Some of the most obvious improvements would be adding more power-ups, adding support for more players in multiplayer and introducing additional game-modes in single player. There are also some obvious omissions from the game, such as the lack of a proper controller management screen, that I'm keen to rectify.</p>                           
-                    <p>Another feature that I'd love to bring to the game is an electricity system to allow players to trigger spike-traps, mines and other hazards with buttons in the arena. I feel this would be a great addition to the gameplay and add a new dimension of creative possibilities to the arena editor. I look forward to coming back and adding this one day!</p>
                 </div>  
                 <div class="unmarked-section" id="Code">
                     <h3>Code Available on GitHub</h3>
@@ -131,7 +126,12 @@ public static void CreateArena(Level level)
             string blockName = "B(" + i.ToString() + "," + j.ToString() + ")";
             
             // ...</code></pre></a>
-                </div>  
+                </div>
+                <div class="unmarked-section" id="Future Plans">
+                    <h3>Future Plans</h3>
+                    <p>There are lots of features and improvements that I would love to add to the game in the future. Some of the most obvious improvements would be adding more power-ups, adding support for more players in multiplayer and introducing additional game-modes in single player. There are also some obvious omissions from the game, such as the lack of a proper controller management screen, that I'm keen to rectify.</p>                           
+                    <p>Another feature that I'd love to bring to the game is an electricity system to allow players to trigger spike-traps, mines and other hazards with buttons in the arena. I feel this would be a great addition to the gameplay and add a new dimension of creative possibilities to the arena editor. I look forward to coming back and adding this one day!</p>
+                </div>                    
             </div>                 
         </div>                
     </div>  

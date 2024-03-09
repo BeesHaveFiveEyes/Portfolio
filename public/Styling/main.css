@@ -283,17 +283,6 @@ body {
     margin-bottom: 2em;    
 }
 
-.link-tag {
-    background-color: var(--label-background);
-    color: var(--label-text);
-    border-radius: 100em;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.5em 1em;
-    font-size: small;
-    opacity: 0.5;
-}
-
 @media only screen and (max-width: 1024px) {
     
     .sidebar {
@@ -314,12 +303,8 @@ body {
         margin: 0;
     }
 
-    .bordered-block {        
-        background-color: var(--background-medium);            
-    }
-
-    .encapsuled {
-        background-color: var(--background-medium);        
+    .bordered-block, .encapsuled, .functionality-tags p {        
+        background-color: var(--background-medium);          
     }
 
     .framed-content > *:last-child {

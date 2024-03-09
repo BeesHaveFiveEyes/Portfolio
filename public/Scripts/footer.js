@@ -27,6 +27,7 @@ $(".footer").html(
         </div>
         <div class="link-group">
             <p><a href="index.html?scroll-to=Other_Projects">Other Projects</a></p>
+            <p><a href="tanks-arena.html">Tanks Arena</a></p>
             <p>3D Rendering</p>
             <p>Book Covers</p>
             <p>Becorns</p>                    

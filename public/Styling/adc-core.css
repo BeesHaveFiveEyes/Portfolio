@@ -211,6 +211,19 @@ a.plain-link {
     margin: 0;
 }
 
+/* Link Tags */
+
+.link-tag {
+    background-color: var(--label-background);
+    color: var(--label-text);
+    border-radius: 100em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    font-size: small;
+    opacity: 0.5;
+}
+
 /* Main and Captionned Images */
 
 .main-image {    
